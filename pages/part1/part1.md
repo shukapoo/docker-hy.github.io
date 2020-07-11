@@ -212,6 +212,9 @@ There are also other Docker registries competing with Docker Hub, such as [quay]
 
 `docker pull quay.io/nordstrom/hello-world`
 
+NOTE: Trying above command may fail giving manifest errors as default tag latest is not present in quay.io/nordstrom/hello-world image. Specifying correct tag for image will pull image without any errors, for ex.
+`docker pull quay.io/nordstrom/hello-world:2.0`
+
 So, if the host's name (here: `quay.io`) is omitted, it will pull from Docker Hub by default.
 
 {% include_relative exercises/1_3.html %}
